@@ -4,3 +4,22 @@
 Выведите минимальное количество монет, которые нужно перевернуть
 '''
 
+n = int(input("Сколько монет:"))
+r = 0
+g = 1
+count_r = 0
+count_g = 0
+for i in range(n):
+    x = int(input("Орел(1) или решка(0)"))
+    if x == r:
+        count_r += 1
+    else :
+        count_g += 1
+
+if count_r < count_g :
+    print(f"Нужно перевернуть: {count_r}")
+else:
+    print(f"Нужно перевернуть {count_g}")
+
+
+
