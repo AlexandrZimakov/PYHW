@@ -10,3 +10,16 @@
     3
     ->
 '''
+
+N = int(input("Введите количество элементов в массиве:"))
+list_1 = list()
+for i in range(N):
+    Ai = int(input("Введите числа:"))
+    list_1.append(Ai)
+
+count = 0
+x = int(input("Какое число вычислить:"))
+for i in list_1:
+    if i == x:
+        count += 1
+print(count)

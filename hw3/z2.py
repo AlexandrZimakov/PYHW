@@ -10,3 +10,18 @@
     6
     -> 5
 '''
+
+N = int(input("Введите количество элементов в массиве:"))
+list_1 = list()
+for i in range(N):
+    Ai = int(input("Введите числа:"))
+    list_1.append(Ai)
+
+x = int(input("Какое число вычислить:"))
+j = abs(x - list_1[0])
+count = list_1[0]
+for i in range (1, len(list_1)):
+    if j > abs(list_1[i] - x):
+        j = abs(list_1[i] - x)
+        count = list_1[i]
+print(f"Cамый близкий по величине элемент: {count}")
