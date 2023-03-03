@@ -22,4 +22,4 @@ x = int(input("Какое число вычислить:"))
 for i in list_1:
     if i == x:
         count += 1
-print(count)
+print(f"Число {x} встречается {count} раз.")
